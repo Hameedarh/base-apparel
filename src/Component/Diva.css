@@ -1,0 +1,88 @@
+.flex{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    gap: 10%;
+    margin-left: 7%;
+}
+.left{
+    margin-top: 5%;
+    flex: 5;
+}
+.left img{
+    margin-bottom: 20%;
+}
+.left h1{
+    font-family: helvetica;
+    letter-spacing: 0.3em;
+    font-size: 3em;
+}
+.col{
+    color: rgb(221, 179, 186);
+}
+
+.right{
+    flex: 5;
+}
+.left p{
+    margin-top: 2%;
+    font-family: Segoe UI;
+    color: rgb(221, 179, 186);
+    width: 85%;
+    line-height: 1.5em;
+}
+.mid{
+    display: flex;
+    margin-top: 5%;
+}
+.mid input{
+    border-radius: 30px;
+    border: 1px solid rgb(221, 179, 186);
+    padding: 1em 1em;
+    width: 50%;
+}
+::placeholder{
+    color: rgb(221, 179, 186);
+}
+.arrow{
+    padding-top: 10px;
+    background-color:rgb(221, 179, 186);
+    border-radius: 30px;
+    width: 15%;
+    border: 1px solid rgb(221, 179, 186);
+    height: 4.2em;
+}
+.arrow:hover{
+    background-color: pink;
+}
+.arrow img{
+    width: 8px;
+}
+@media screen and (min-width: 700px){
+    .non{
+        display: none;
+    }
+   }
+@media screen and (max-width: 700px){
+    .flex{
+     display:grid;
+    }
+    .des{
+        display: none;
+    }
+    .non{
+        width: 100%;
+        height: 30%;
+    }
+    .left h1, p {
+        text-align: center;
+    }
+    .mid{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .mid input{
+        margin-top: 0%;
+    }
+   }
